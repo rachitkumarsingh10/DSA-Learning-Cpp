@@ -12,16 +12,9 @@ int main(){
         cout<<" ";
         }
         for(int column2=1;column2<=row;column2++){
-        cout<<"*"; 
+        cout<<row-column2+1; 
         }
         cout<<endl;
 }
 
 }
-
-// Output:- 
-//     *
-//    **
-//   ***
-//  ****
-// *****
