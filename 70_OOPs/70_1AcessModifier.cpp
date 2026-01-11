@@ -7,10 +7,10 @@ class Student {
     int age, roll_no ;
     string grade;
 
-
-    // Function Getter and Setter 
-
     public:
+
+    // Function Setter  
+
     void setname(string n){
         name=n;
     }
@@ -23,6 +23,9 @@ class Student {
       void setgrade(string g){
         grade=g;
     }
+
+    // Function Getter
+
     void getinfo(){
         cout<<name<<endl;
         cout<<age<<endl<<roll_no<<endl<<grade<<endl;
@@ -33,6 +36,9 @@ class Student {
 
 int main(){
     Student s1,s2,s3,s4;
+
+
+    // When object is public :- 
 
     // s1.name="Rohit";
     // s1.age=21;

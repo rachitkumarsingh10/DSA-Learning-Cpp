@@ -6,7 +6,9 @@ class Customer{
     int acc_num,balance;
 
     public:
-     static int total_Customer;
+    
+    // Can be Acess without the object
+    static int total_Customer;
 
     Customer(string name, int acc_num, int balance){
         this->name=name;

@@ -2,14 +2,16 @@
 using namespace std;
 
 class Customer{
+
+
+
     string name;
     int acc_num,balance;
     static int total_Customer;
     static int total_balance;
    
 
-    public:
-   
+    public:  
 
     Customer(string name, int acc_num, int balance){
         this->name=name;
@@ -42,6 +44,9 @@ class Customer{
         balance+=amount;
         total_balance+=amount;
         }
+        else{
+            cout<<"Invalid Amount ";
+        }
     }
 
     void withdraw(int amount){
@@ -62,17 +67,11 @@ int main(){
     Customer a2("Mohit",2,1000);
     Customer a3("Mohan",3,2000);
 
+    // a1.display();
+    // a1.balance+=-10;
+    // a1.display();
 
-//  Customer::display_total();   - not work because not part of class Customer
-    Customer::accessStatic();
-
-//  Aceess using  object 
-//  a1.display_total();
-
-    a1.deposit(800);
-    Customer::accessStatic();
-    a2.withdraw(100);
-    Customer::accessStatic();
+    a1.deposit(-10);
 
     
 }

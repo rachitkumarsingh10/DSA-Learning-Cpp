@@ -11,7 +11,7 @@ private:
 public:
 
 Customer(){
-    name="4";
+    name="Not Given";
     cout<<"Constructor is "<< name<<endl;
     
 }

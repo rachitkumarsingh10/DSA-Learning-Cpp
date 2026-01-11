@@ -29,8 +29,11 @@ int Customer:: total_Customer=0;
 int main(){
    
     Customer a1("Rohit",1,1000);
+    a1.display();
     Customer a2("Mohit",2,1010);
+    a2.display();
     Customer a3("Mohan",3,2000);
+    a3.display();
 
     // How to calaculate total object 
     a1.display_total();
