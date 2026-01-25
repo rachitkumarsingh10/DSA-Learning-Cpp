@@ -1,20 +1,26 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    int num;
-    cout<<"Enter number =";
-    cin>>num;
-    int ans,rem;
-    while(num>9){
-        ans=0;
-    while(num!=0){
-        rem=num%10;
-        num=num/10;
-        ans=ans+rem;
-    }
-    num=ans;
+
+int main() {
+    int x;
+    cin >> x;
+
+    int i = 0;
+    while (i <= x / (i == 0 ? 1 : i)) {
+        i++;
     }
 
-    cout<<" the digit is = "<<ans;
+    cout << i - 1;
     return 0;
 }
+
+
+    // int i = 0;
+    // while (true) {
+    //     if (i == 0) {
+    //         if (0 > x / 1) break;
+    //     } else {
+    //         if (i > x / i) break;
+    //     }
+    //     i++;
+    // }
